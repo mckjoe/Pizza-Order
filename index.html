@@ -19,34 +19,48 @@
           <p>Please select a size:</p>
           <div class="form-group">
             <select class="form-control" id="size">
-              <option>Small</option>
-              <option>Medium</option>
-              <option>Large</option>
-              <option>XLRG</option>
+              <option>Please select a size:</option>
+              <option value="1">Small (9")</option>
+              <option value="2">Medium (12")</option>
+              <option value="3">Large (14")</option>
+              <option value="4">XLRG (16")</option>
             </select>
           </div>
+          <p>Please select a crust:</p>
           <div class="form-group">
             <select class="form-control" id="crust">
+              <option>Please select the crust you like:</option>
               <option>Thin</option>
               <option>Hand-Tossed</option>
               <option>Thick</option>
               <option>Stuffed</option>
             </select>
           </div>
-          <div class="form-group">
-            <input type="checkbox" name="topping" value="1">Pepperonni<br>
-            <input type="checkbox" name="topping" value="2">Ham<br>
-            <input type="checkbox" name="topping" value="3">Salami<br>
-            <input type="checkbox" name="topping" value="4">Chicken<br>
-            <input type="checkbox" name="topping" value="8">Sausage<br>
-            <input type="checkbox" name="topping" value="5">Bell Peppers<br>
-            <input type="checkbox" name="topping" value="6">Onion<br>
-            <input type="checkbox" name="topping" value="7">Garlic<br>
-            <input type="checkbox" name="topping" value="8">spinach<br>
-            <input type="checkbox" name="topping" value="8">Pineapple<br>
-            <input type="checkbox" name="topping" value="8">Olive<br>
-            <input type="checkbox" name="topping" value="8">Extra Cheese<br>
+          <p>Please select the toppings you would like:</p>
+          <div class="well">
+            <div class="row">
+              <div class="form-group">
+                <p>Every Pizza comes with cheese and sauce, but each additional topping is $1.00.  Choose all the toppings that you would like.<p>
+                <div class="col-xs-6">
+                  <input type="checkbox" name="topping" value="1"> Pepperonni<br>
+                  <input type="checkbox" name="topping" value="2"> Ham<br>
+                  <input type="checkbox" name="topping" value="3"> Salami<br>
+                  <input type="checkbox" name="topping" value="4"> Chicken<br>
+                  <input type="checkbox" name="topping" value="8"> Sausage<br>
+                  <input type="checkbox" name="topping" value="5"> Bell Peppers<br>
+                </div>
+                <div class="col-xs-6">
+                  <input type="checkbox" name="topping" value="6"> Onion<br>
+                  <input type="checkbox" name="topping" value="7"> Garlic<br>
+                  <input type="checkbox" name="topping" value="8"> spinach<br>
+                  <input type="checkbox" name="topping" value="8"> Pineapple<br>
+                  <input type="checkbox" name="topping" value="8"> Olive<br>
+                  <input type="checkbox" name="topping" value="8"> Extra Cheese<br>
+                </div>
+              </div>
+            </div>
           </div>
+          <br>
           <button type="submit" class="btn btn-info">Place Order!</button>
         </form>
       </div>

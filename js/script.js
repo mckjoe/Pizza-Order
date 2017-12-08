@@ -6,14 +6,18 @@ function Pizza(size, crust, toppings) {
 
 Pizza.prototype.basicCost = function() {
   var cost = 0;
-  if (this.size === "Small") {
+  if (this.size === "1") {
     cost += 5;
-  } else if (this.size === "Medium") {
+  } else if (this.size === "2") {
     cost += 7;
-  } else if (this.size === "Large") {
+  } else if (this.size === "3") {
     cost += 9;
-  } else if (this.size === "XLRG") {
+  } else if (this.size === "4") {
     cost += 10;
+  } if ((this.crust === "thin") || (this.crust === "Hand-Tossed")) {
+    cost += 2;
+  } else if ((this.crust === "Thick") || (this.crust === "Stuffed")) {
+    cost += 4;
   }
   return cost;
 }
@@ -28,6 +32,7 @@ $(document).ready(function() {
     $("input:checkbox[name=topping]:checked").each(function() {
       toppings.push($(this).val());
     });
-    console.log(newPizza);
+    var flatRate = newPizza.basicCost();
+    console.log(flatRate);
   });
 });
