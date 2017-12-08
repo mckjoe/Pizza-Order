@@ -1,3 +1,7 @@
 .well {
   background-color: white;
 }
+
+.receipt {
+display: none;
+}
