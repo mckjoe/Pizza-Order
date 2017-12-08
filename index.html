@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Joe's Pizzaria Compania</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Joe's Pizzaria Compania</h2>
+        <h5>Please place your order!</h5>
+      </div>
+      <div class="order-form">
+        <form id="pizza">
+          <p>Please select a size:</p>
+          <div class="form-group">
+            <select class="form-control" id="size">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>XLRG</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="crust">
+              <option>Thin</option>
+              <option>Hand-Tossed</option>
+              <option>Thick</option>
+              <option>Stuffed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="topping" value="1">Pepperonni<br>
+            <input type="checkbox" name="topping" value="2">Ham<br>
+            <input type="checkbox" name="topping" value="3">Salami<br>
+            <input type="checkbox" name="topping" value="4">Chicken<br>
+            <input type="checkbox" name="topping" value="8">Sausage<br>
+            <input type="checkbox" name="topping" value="5">Bell Peppers<br>
+            <input type="checkbox" name="topping" value="6">Onion<br>
+            <input type="checkbox" name="topping" value="7">Garlic<br>
+            <input type="checkbox" name="topping" value="8">spinach<br>
+            <input type="checkbox" name="topping" value="8">Pineapple<br>
+            <input type="checkbox" name="topping" value="8">Olive<br>
+            <input type="checkbox" name="topping" value="8">Extra Cheese<br>
+          </div>
+          <button type="submit" class="btn btn-info">Place Order!</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
