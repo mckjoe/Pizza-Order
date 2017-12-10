@@ -53,6 +53,11 @@ Pizza.prototype.toppingCost = function() {
 }
 
 $(document).ready(function() {
+  $("#orderForm").click(function() {
+    $(".welcomePage").hide();
+    $("#orderForm").hide();
+    $(".orderForm").show();
+  });
   var toppings = [];
   $("#pizza").submit(function(event) {
     event.preventDefault();

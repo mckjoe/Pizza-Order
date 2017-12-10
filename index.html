@@ -9,73 +9,102 @@
     <title>Joe's Pizzaria Compania</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h2>Joe's Pizzaria Compania</h2>
-        <h5>Please place your order!</h5>
-      </div>
-      <div class="order-form">
-        <form id="pizza">
-          <p>Please select a size:</p>
-          <div class="form-group">
-            <select class="form-control" id="size">
-              <option>Please select a size:</option>
-              <option value="1">Small (9")</option>
-              <option value="2">Medium (12")</option>
-              <option value="3">Large (14")</option>
-              <option value="4">XLRG (16")</option>
-            </select>
+    <div id="myClass">
+      <div class="container">
+        <div class="jumbotron">
+          <h2>Joe's Pizzaria Compania</h2>
+          <h5>Please place your order!</h5>
+        </div>
+        <br>
+        <div id="buttonCenter">
+          <button id="orderForm">Place an order!</button>
+        </div>
+        <br>
+        <div class="welcomePage">
+          <div class="row">
+            <div class="col-xs-2">
+              <blockquote>
+                "This was the best pizza I have ever had in me life"
+              <blockquote>
+            </div>
+            <div class="col-xs-8">
+              <img src="img/salad.jpg" alt="image of a salad">
+            </div>
+            <div class="col-xs-2">
+              <blockquote>
+                Thank you for choosing our up and coming business.
+              </blockquote>
+            </div>
           </div>
-          <p>Please select a crust:</p>
-          <div class="form-group">
-            <select class="form-control" id="crust">
-              <option>Please select the crust you like:</option>
-              <option>Thin</option>
-              <option>Hand-Tossed</option>
-              <option>Thick</option>
-              <option>Stuffed</option>
-            </select>
-          </div>
-          <p>Please select the toppings you would like:</p>
-          <div class="well">
+        </div>
+        <br>
+        <div class="orderForm">
+          <form id="pizza">
             <div class="row">
-              <div class="form-group">
-                <p>Every Pizza comes with cheese and sauce, but each additional topping is $1.00.  Choose all the toppings that you would like.<p>
-                <div class="col-xs-6">
-                  <input type="checkbox" name="topping" value="1"> Pepperonni<br>
-                  <input type="checkbox" name="topping" value="2"> Ham<br>
-                  <input type="checkbox" name="topping" value="3"> Salami<br>
-                  <input type="checkbox" name="topping" value="4"> Chicken<br>
-                  <input type="checkbox" name="topping" value="8"> Sausage<br>
-                  <input type="checkbox" name="topping" value="5"> Bell Peppers<br>
+              <div class="col-xs-6">
+                <p>Please select a size:</p>
+                <div class="form-group">
+                  <select class="form-control" id="size">
+                    <option>Please select a size:</option>
+                    <option value="1">Small (9")</option>
+                    <option value="2">Medium (12")</option>
+                    <option value="3">Large (14")</option>
+                    <option value="4">XLRG (16")</option>
+                  </select>
                 </div>
-                <div class="col-xs-6">
-                  <input type="checkbox" name="topping" value="6"> Onion<br>
-                  <input type="checkbox" name="topping" value="7"> Garlic<br>
-                  <input type="checkbox" name="topping" value="8"> spinach<br>
-                  <input type="checkbox" name="topping" value="8"> Pineapple<br>
-                  <input type="checkbox" name="topping" value="8"> Olive<br>
-                  <input type="checkbox" name="topping" value="8"> Extra Cheese<br>
+              </div>
+              <div class="col-xs-6">
+                <p>Please select a crust:</p>
+                <div class="form-group">
+                  <select class="form-control" id="crust">
+                    <option>Please select the crust you like:</option>
+                    <option>Thin</option>
+                    <option>Hand-Tossed</option>
+                    <option>Thick</option>
+                    <option>Stuffed</option>
+                  </select>
                 </div>
               </div>
             </div>
-          </div>
+            <p>Please select the toppings you would like:</p>
+            <div class="well">
+              <div class="row">
+                <div class="form-group">
+                  <p>Every Pizza comes with cheese and sauce, but each additional topping is $1.00.  Choose all the toppings that you would like.<p>
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="topping" value="1"> Pepperonni<br>
+                    <input type="checkbox" name="topping" value="2"> Ham<br>
+                    <input type="checkbox" name="topping" value="3"> Salami<br>
+                    <input type="checkbox" name="topping" value="4"> Chicken<br>
+                    <input type="checkbox" name="topping" value="8"> Sausage<br>
+                    <input type="checkbox" name="topping" value="5"> Bell Peppers<br>
+                  </div>
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="topping" value="6"> Onion<br>
+                    <input type="checkbox" name="topping" value="7"> Garlic<br>
+                    <input type="checkbox" name="topping" value="8"> spinach<br>
+                    <input type="checkbox" name="topping" value="8"> Pineapple<br>
+                    <input type="checkbox" name="topping" value="8"> Olive<br>
+                    <input type="checkbox" name="topping" value="8"> Extra Cheese<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn">Place Order</button>
+          </form>
           <br>
-          <button type="submit" class="btn btn-info">Place Order!</button>
-        </form>
-        <br>
-        <div class="receipt">
-          <p>Thank you for choosing Joe's Pizzaria Compania! We hope you enjoy!</p>
-          <p>Please look over your order below to make sure we got it correct.</p>
-          <h3>size: <span class="size"></span><br>
-            Crust: <span class="crust"></span> crust
-            <br>
-            Basic Total: $<span class="initTotal"></span><br>
-            <br>
-            Topping Total: $<span class="toppingTotal"></span><br>
-            <br>
-            Pizza Total: $<span class="finalTotal"></span>
-          </h3>
+          <div class="col-xs-6">
+            <div class="receipt">
+              <p>Thank you for choosing Joe's Pizzaria Compania! We hope you enjoy!</p>
+              <p>We hope you enjoy your pizza!  Joe has personally begun making your order, and we look forward to seeing you in 40-50 min.</p>
+              <h3>
+                Topping Total: $<span class="toppingTotal"></span><br>
+                <br>
+                Pizza Total: $<span class="finalTotal"></span>
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>

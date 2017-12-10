@@ -1,7 +1,54 @@
+#orderForm {
+  margin: auto;
+  width: 20%;
+  background-color: #009246;
+  color: #ce2b37;
+}
+#buttonCenter {
+  text-align: center;
+}
+#myClass {
+  border: 10px solid #ce2b37;
+  padding:30px;
+  margin: 100px;
+}
 .well {
   background-color: white;
 }
 
 .receipt {
 display: none;
+background-color: #009246;
+}
+
+.jumbotron {
+  background-image: url("../img/flames.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  color: white;
+  text-align: center;
+}
+
+.orderForm {
+  display: none;
+  background-color: #009246;
+}
+
+.well {
+  background-color: #ce2b37;
+}
+
+.welcomePage {
+    margin: auto;
+    width: 80%;
+}
+
+.btn {
+  background-color: #ce2b37;
+  color: #009246;
+}
+
+body {
+  background-color: #f2f2f2;
 }
