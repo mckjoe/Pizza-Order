@@ -77,6 +77,7 @@ $(document).ready(function() {
     $(".crust").text(crust);
     $(".size").text(size);
     $("#pizza").hide();
+    $(".orderForm").hide();
     $(".receipt").show(2000);
   });
 });
