@@ -34,7 +34,14 @@ _This page was built using html, CSS and JavaScript and using bootstrap3.3.7 and
 |Behavior|Input|Output|
 |--------|-----|------|
 |Create a pizza object|size, crust, toppings|large, thin crust, no toppings|
-|add toppings| $2 for another topping| + $2|
+|add to the total for each size| small | total += $5|
+|add to the total depending on crust| thin | cost += $2|
+|add 1.00 to total for each topping| "check" | total += $1|
+|return a total on the receipt | small thin crust 1 topping | $6.00|
+
+## gh-pages link
+
+_https://mckjoe.github.io/pizza-order-page/_
 
 ### License
 
