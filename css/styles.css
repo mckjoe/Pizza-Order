@@ -1,32 +1,12 @@
-#orderForm {
-  margin: auto;
-  width: 20%;
-  background-color: #009246;
-  color: #ce2b37;
-}
-#buttonCenter {
-  text-align: center;
-}
-#myClass {
-  border: 5px solid #ce2b37;
-  padding:30px;
-  margin: 100px;
-}
-.well {
-  background-color: white;
+body {
+  box-sizing: border-box;
 }
 
-.receipt {
-display: none;
-/*background-color: #009246;*/
-background-image: url("../img/newpizza.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: right top;
-color: white;
-border: 2px solid #009246;
-padding: 15px;
-margin: 25px;
+.myClass {
+  border: 5px solid #ce2b37;
+  width: 100%;
+  font-family: arial;
+  background-color: green;
 }
 
 .jumbotron {
@@ -38,28 +18,92 @@ margin: 25px;
   text-align: center;
   border: 2px solid #009246;
   padding: 10px;
-  margin: 10px;
+  margin-top: 15px;
+}
+
+.show-order-form {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: white;
+  color: red;
+  transform: translateY(-15px);
+}
+
+.welcomePage {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+}
+
+.salad {
+  grid-column: 1 / 2;
+  width: 100%;
+
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2 / 3;
+  background-color: white;
+  padding: 15px;
+  color: red;
+  margin-left: 5%;
+  width: 100%;
+}
+
+.quote h3 {
+  display: flex;
+  font-size: 3vw;
+}
+
+.quote h6 {
+  font-size: 2vw;
+}
+
+.well {
+  background-color: white;
+  min-width: 150px;
 }
 
 .orderForm {
   display: none;
-  background-color: #009246;
+  background-color: green;
+  padding: 25px;
 }
 
-.well {
-  background-color: #ce2b37;
+.place-order-button {
+  background-color: white;
+  color: red;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }
 
-.welcomePage {
-    margin: auto;
-    width: 80%;
+.receipt {
+  display: none;
+  background-image: url("../img/newpizza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  color: white;
+  padding: 20px 25px;
+  margin: 0 25px 25px 25px;
 }
 
-.btn {
-  background-color: #ce2b37;
-  color: #009246;
-}
-
-body {
-  background-color: #f2f2f2;
+@media screen and (max-width: 400px) {
+  .welcomePage {
+    display: flex;
+    flex-direction: column;
+  }
+  .quote {
+    width: 100%;
+    margin: 0;
+  }
+  .well {
+    margin: 0;
+  }
 }

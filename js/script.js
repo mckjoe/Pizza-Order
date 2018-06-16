@@ -1,3 +1,5 @@
+// business
+
 function Pizza(size, crust, toppings) {
   this.size = size;
   this.crust = crust;
@@ -52,16 +54,16 @@ Pizza.prototype.toppingCost = function() {
   return toppingCost;
 }
 
+// User Interface
 $(document).ready(function() {
-  $("#orderForm").click(function() {
-    $(".welcomePage").hide();
-    $("#orderForm").hide();
-    $(".orderForm").show();
+  $(".show-order-form").click(function() {
+    $(".welcomePage").toggle();
+    $("#orderForm").toggle();
+    $(".orderForm").toggle();
   });
   var toppings = [];
   $("#pizza").submit(function(event) {
     event.preventDefault();
-    // debugger;
     var size = $("#size").val();
     var crust = $("#crust").val();
     var newPizza = new Pizza(size, crust, toppings);
