@@ -1,34 +1,33 @@
 # Joe's Pizzaria Compania
 
-#### This is a webpage for the pizza restaurant that I created, on 12-07-2017.
+#### This is a webpage for a made up Pizza Restaurant.  Feel free to visit page
+Visit Site: https://mckjoe.github.io/Pizza-Order/
 
 #### By **Joe McKinney**
 
 ## Description
+This is a website for a pizza company so users can place oreders online.  
 
-This app will offer the user a few options to order a pizza and will print a receipt for them in the html.
-
-## Setup/Installation Requirements
-
-* _Go to the githubpages link located below_
-###  or
-* _Clone this repository to your desktop_
-* _Double click on the desktop icon_
-* _Double click on index.html_
+## Installation Requirements
+* Clone this repository to your desktop.
+* Change to the projects root directory with "cd Pizza-Order".
+* To open in atom, type "atom ." in command line from withing projects home directory.
 
 
 ## Known Bugs
-
-_There are no known bugs or breaks._
+There are no known bugs or breaks.
 
 ## Support and contact details
-
-_If you run into any issues or if you have any questions or concerns feel free to contact us at our headquarters in Portland, Oregon.  Thank you._
+If you find any bugs or errors or have questions or somments please email me at mckinney.a.joe@gmail.com
 
 ## Technologies Used
-
-_This page was built using html, CSS and JavaScript and using bootstrap3.3.7 and jQuery3.2.1.js _
-
+* JavaScript
+* jQuery
+* HTML
+* CSS
+* CSS grids
+* Flex Box
+* Bootstrap
 ## B.D.D
 
 |Behavior|Input|Output|
@@ -38,10 +37,6 @@ _This page was built using html, CSS and JavaScript and using bootstrap3.3.7 and
 |add to the total depending on crust| thin | cost += $2|
 |add 1.00 to total for each topping| "check" | total += $1|
 |return a total on the receipt | small thin crust 1 topping | $6.00|
-
-## gh-pages link
-
-_https://mckjoe.github.io/pizza-order-page/_
 
 ### License
 
